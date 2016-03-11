@@ -1,16 +1,16 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="service">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 size-container">
+  <div class="row size-container">
     <h3 class="text-center size-h wow bounceInUp"> Nuestros Servicios </h3>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
-      <%= image_tag("img2.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Seguimiento y control", :width => 200, :height => 150) %>
+      <%= image_tag("img2.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Seguimiento y control", :width => 300, :height => 150) %>
       <h4 class="colorFontText">Seguimiento y Control</h4>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
-      <%= image_tag("img3.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Desarrollo de proyectos mineros", :width => 200, :height => 150) %>
+      <%= image_tag("img3.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Desarrollo de proyectos mineros", :width => 300, :height => 150) %>
       <h4 class="colorFontText">Desarrollo de Proyectos Mineros</h4>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
-      <%= image_tag("img4.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Estimación de costos", :width => 200, :height => 150) %>
+      <%= image_tag("img4.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Estimación de costos", :width => 300, :height => 150) %>
       <h4 class="colorFontText">Estimación de Costos</h4>
     </div>
   </div>
@@ -81,16 +81,16 @@
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="tools">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 size-container">
+  <div class="row size-container">
     <h3 class="text-center size-h-2 wow bounceInUp"> Nuestro Equipamento </h3>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
-      <%= image_tag("tools1.jpg", class:'img-responsive img-thumbnail size-img', :width => 200, :height => 150) %>
+      <%= image_tag("tools1.jpg", class:'img-responsive img-thumbnail size-img', :width => 300, :height => 150) %>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
-      <%= image_tag("tools2.jpg", class:'img-responsive img-thumbnail size-img', :width => 200, :height => 150) %>
+      <%= image_tag("tools2.jpg", class:'img-responsive img-thumbnail size-img', :width => 300, :height => 150) %>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
-      <%= image_tag("tools3.jpg", class:'img-responsive img-thumbnail size-img', :width => 200, :height => 150) %>
+      <%= image_tag("tools3.jpg", class:'img-responsive img-thumbnail size-img', :width => 300, :height => 150) %>
     </div>
   </div>
 </div>
@@ -141,16 +141,15 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="form-group">
-            <%= f.text_area :comment, placeholder: 'Tu comentario', class: 'form-control' %>
+            <%= f.text_area :comment, placeholder: 'Tu comentario', class: 'comment form-control' %>
           </div>
           <div class="form-group">
             <%= f.submit 'Envia tu mensaje',class: 'button btn btn-block btn-warning' %>
           </div>
         </div>
-        <div class="message-alert col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          
-        </div>
       <% end %>
+      <div class="message-alert col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      </div>
     </div>
   </div>
 </div>
