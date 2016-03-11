@@ -1,0 +1,5 @@
+$(".message-alert").append('<p id="flash" class="alert alert-success fade in">Se envio el mensaje, Gracias.</p>');
+$(".form-control").val("");
+setTimeout(function(){
+  $('#flash').fadeOut("slow");
+}, 3000);

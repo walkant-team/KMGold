@@ -1,0 +1,2 @@
+module KmgoldHelper
+end

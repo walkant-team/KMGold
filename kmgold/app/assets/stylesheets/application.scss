@@ -1,0 +1,281 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require animate
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin-top: 0px;
+}
+
+#bgHome{
+	background: linear-gradient(rgba(74, 74, 74, .6), rgba(74, 74, 74, .6)),url(image-path('header_logo.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 90%;
+}
+
+#projectInfo{
+	background-color: #f9f9f9;
+}
+
+#tools{
+	background: linear-gradient(rgba(188, 123, 16, .6), rgba(188, 123, 16, .6)),url(image-path('tools.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#contact{
+	background-color: #f9f9f9;
+}
+
+.footer{
+	background-color: #4A4A4A;
+	color: white;
+}
+
+.size-footer{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.navbar-brand{
+	margin-top: -25px;
+}
+
+.navbar{
+	background-color: transparent;
+	border: none;
+	top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: white;
+	font-size: 18px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #f4f4f4;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+	color: #f4f4f4;
+}
+
+.button:focus{
+	
+}
+
+.header-message{
+	margin-top: 15%;
+	margin-bottom: 15%;
+	color: white;
+	text-align: center;
+}
+
+.header-h1{
+	font-size: 52px;
+}
+
+.header-h2{
+	font-size: 46px;
+}
+
+.color{
+	color: #6A6A6A;
+}
+
+.size-img{
+	margin-bottom: 20px;
+}
+
+.size-h{
+	margin-bottom: 40px;
+	color: #6A6A6A;
+}
+
+.size-h-2{
+	margin-bottom: 40px;
+	color: white;
+}
+
+.size-container{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.size-projects{
+	margin-top: 19%;
+	margin-bottom: 19%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.img-size{
+	height: 100px;
+	margin-bottom: 40px;
+	width: 200px;
+}
+
+.fix-size-projects{
+	margin-top: 9%;
+	margin-bottom: 9%;
+	margin-left: 10%;
+	margin-right: 10%;	
+}
+
+.colorFontText{
+	color: #6A6A6A;
+}
+
+#project_one{
+	background: linear-gradient(rgba(74, 74, 74, .6), rgba(74, 74, 74, .6)),url(image-path('project5.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border: 4px solid white;
+	height: 440px;
+	color: white;
+}
+
+#project_two{
+	background: linear-gradient(rgba(74, 74, 74, .6), rgba(74, 74, 74, .6)),url(image-path('project2.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border: 4px solid white; 
+	height: 240px;
+	color: white;
+}
+
+#project_three{
+	background: linear-gradient(rgba(74, 74, 74, .6), rgba(74, 74, 74, .6)),url(image-path('project3.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border: 4px solid white;	
+	height: 240px;
+	color: white;
+}
+
+#project_four{
+	background: linear-gradient(rgba(74, 74, 74, .6), rgba(74, 74, 74, .6)),url(image-path('project4.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border: 4px solid white;
+	height: 200px;
+	color: white;
+}
+
+.fix-col-3{
+	width: 23.8%;
+}
+
+.fix-col-6{
+	width: 47.7%;
+}
+
+.textarea.form-control{
+	height: 80px;
+}
+
+
+/** media queries **/
+@media (max-width: 400px) {
+	.header-h1{
+		margin-top: 40px;
+		font-size: 40px;
+	}
+	.header-h2{
+		font-size: 40px;
+	}
+
+	.img-res{
+		margin-left: 15%;
+	}
+	.ctc-info{
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	#project_one, #project_two, #project_three, #project_four{
+		height: 260px;
+	}
+ }
+
+
+@media (max-width: 360px) {
+	.header-h1{
+		margin-top: 40px;
+		font-size: 40px;
+	}
+	.header-h2{
+		font-size: 40px;
+	}
+
+	.img-res{
+		margin-left: 15%;
+	}
+	.ctc-info{
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	#project_one, #project_two, #project_three, #project_four{
+		height: 260px;
+	}
+ }
+
+@media (max-width: 320px) {
+	.header-h1{
+		margin-top: 40px;
+		font-size: 40px;
+	}
+	.header-h2{
+		font-size: 40px;
+	}
+
+	.img-res{
+		margin-left: 15%;
+	}
+	.ctc-info{
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	#project_one, #project_two, #project_three, #project_four{
+		height: 260px;
+	}
+ }
+
