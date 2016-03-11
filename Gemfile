@@ -48,6 +48,8 @@ group :development do
   gem 'spring'
 end
 
+gem "letter_opener", :group => :development
+
 group :production do
   gem 'rails_12factor'
   gem 'pg'
