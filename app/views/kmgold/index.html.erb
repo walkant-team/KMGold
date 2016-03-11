@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="service">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 size-container">
-    <h3 class="text-center size-h wow bounceInUp"> Nuestro servicios </h3>
+    <h3 class="text-center size-h wow bounceInUp"> Nuestros Servicios </h3>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
       <%= image_tag("img2.jpg", class:'img-responsive img-thumbnail size-img', :alt => "Seguimiento y control", :width => 200, :height => 150) %>
       <h4 class="colorFontText">Seguimiento y Control</h4>
@@ -18,35 +18,35 @@
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="projectInfo">
   <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 size-container wow bounceInUp">
-    <h3 class="text-center color">Nuestros grandes proyectos</h3>
+    <h3 class="text-center color">Nuestros Proyectos</h3>
   </div>
 </div>
 
 <div class="row hidden-xs hidden-sm" id="project">
     <div class="col-xs-12 col-sm-12 col-md-6" id="project_one">
       <div class="size-projects wow bounceInUp">
-        <h3 class="text-center">Antioquia Gold INC.</h3><br>
-        <p class="text-center">Estudio conceptual avanzado mina subterranea, plan de inicio de operaciones de minado proyectos cisneros.</p><br>
-        <li class="text-center">Revisión del Modelo de Recursos y cálculo de Ley de Corte por Método.</li>
-        <li class="text-center">Diseño de Método de Explotación Corte y Relleno.</li>        
+        <h3 class="">Antioquia Gold INC.</h3><br>
+        <p class="">Estudio conceptual avanzado mina subterranea, plan de inicio de operaciones de minado proyectos cisneros.</p><br>
+        <li class="">Revisión del Modelo de Recursos y cálculo de Ley de Corte por Método.</li>
+        <li class="">Diseño de Método de Explotación Corte y Relleno.</li>        
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 fix-col-3" id="project_two">
         <div class="size-projects wow bounceInUp">
-          <h4 class="text-center">Minera Lincuna SAC</h4>
-          <p class="text-center">Mejoramiento del sistema de ventilacion a corto plazo.</p>
+          <h4 class="">Minera Lincuna SAC</h4>
+          <p class="">Mejoramiento del sistema de ventilacion a corto plazo.</p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 fix-col-3" id="project_three">
         <div class="size-projects wow bounceInUp">  
-          <h4 class="text-center">Minera Bateas SAC.</h4>
-          <p class="text-center">Diseño e implantación de sistema de ventilacion para plan de expansion. </p>
+          <h4 class="">Minera Bateas SAC.</h4>
+          <p class="">Diseño e implantación de sistema de ventilacion para plan de expansion. </p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 fix-col-6" id="project_four"> 
         <div class="fix-size-projects wow bounceInUp">  
-          <h4 class="text-center">Minera Suyamarca – Hochschield Mining</h4>
+          <h4 class="">Minera Suyamarca – Hochschield Mining</h4>
           <p>Diseño e implantación de sistema de ventilacion principal de la mina subterranea - UP PALLANCATA.</p>
         </div>
       </div>
@@ -82,7 +82,7 @@
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="tools">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 size-container">
-    <h3 class="text-center size-h-2 wow bounceInUp"> Nuestro equipamento </h3>
+    <h3 class="text-center size-h-2 wow bounceInUp"> Nuestro Equipamento </h3>
     <div class="col-xs-12 col-sm-12 col-md-4 text-center wow bounceInUp">
       <%= image_tag("tools1.jpg", class:'img-responsive img-thumbnail size-img', :width => 200, :height => 150) %>
     </div>
@@ -97,7 +97,7 @@
 
 <div class="col-xs-12 col-sm-12 col-md-12" id="clients">
   <div class="row size-container">
-    <h3 class="text-center size-h wow bounceInUp"> Nuestro clientes</h3>
+    <h3 class="text-center size-h wow bounceInUp"> Nuestros Clientes</h3>
     <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-3 wow bounceInUp img-res">
       <%= image_tag("volcan-p.png", class:'img-responsive img-size text-center') %>
     </div>
@@ -130,18 +130,18 @@
       <%= form_for @suscription,remote: true  do |f| %>  
         <div class="col-xs-12 col-sm-12 col-md-6">  
           <div class="form-group">  
-            <%= f.text_field :fullname, placeholder: '*Tu nombre', class: 'form-control' %>
+            <%= f.text_field :fullname, placeholder: 'Tu nombre', class: 'form-control' %>
           </div>
           <div class="form-group">
-            <%= f.text_field :email, placeholder: '*Tu email', class: 'form-control' %>
+            <%= f.text_field :email, placeholder: 'Tu email', class: 'form-control' %>
           </div>
           <div class="form-group">
-            <%= f.text_field :phone, placeholder: '*Tu numero', class: 'form-control' %>
+            <%= f.text_field :phone, placeholder: 'Tu numero', class: 'form-control' %>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="form-group">
-            <%= f.text_area :comment, placeholder: '*Tu comentario', class: 'form-control' %>
+            <%= f.text_area :comment, placeholder: 'Tu comentario', class: 'form-control' %>
           </div>
           <div class="form-group">
             <%= f.submit 'Envia tu mensaje',class: 'button btn btn-block btn-warning' %>
