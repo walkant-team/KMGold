@@ -8,6 +8,6 @@ class Suscription < ActiveRecord::Base
 	validates :comment, presence: true
 
 	def send_mail
-		SuscriptionMailer.notification_email(self).deliver_now
+		SuscriptionMailer.notification_email(self).deliver
 	end
 end
