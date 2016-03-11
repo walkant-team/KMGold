@@ -78,14 +78,14 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Config Mailer
-  ActionMailer::Base.smtp_settings = {
-    :port           => ENV['MAILGUN_SMTP_PORT'],
-    :address        => ENV['MAILGUN_SMTP_SERVER'],
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'http://www.minerakmgold.com',
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
     :authentication => :plain,
+    :address => ENV['MAILGUN_SMTP_SERVER'],
+    :port => ENV['MAILGUN_SMTP_PORT'],
+    :domain => "minerakmgold.com",
+    :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+    :password => ENV['MAILGUN_SMTP_PASSWORD']
   }
-  ActionMailer::Base.delivery_method = :smtp
 
 end
