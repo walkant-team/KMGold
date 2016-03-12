@@ -2,8 +2,6 @@ class SuscriptionsController < ApplicationController
 	def create
 		@suscription = Suscription.new(suscription_params)
 	  @suscription.save
-
-		SuscriptionMailer.notification_email(@suscription).deliver
 	end
 
 	private
