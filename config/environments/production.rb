@@ -81,11 +81,10 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :authentication => :plain,
-    :address => ENV['MAILGUN_SMTP_SERVER'],
-    :port => ENV['MAILGUN_SMTP_PORT'],
+    :address => ENV['SPARKPOST_SMTP_HOST'],
+    :port => ENV['SPARKPOST_SMTP_PORT'],
     :domain => "minerakmgold.com",
-    :user_name => ENV['MAILGUN_SMTP_LOGIN'],
-    :password => ENV['MAILGUN_SMTP_PASSWORD']
+    :user_name => ENV['SPARKPOST_SMTP_USERNAME'],
+    :password => ENV['SPARKPOST_SMTP_PASSWORD']
   }
-
 end
