@@ -1,5 +1,5 @@
 class Suscription < ActiveRecord::Base
-	EMAIL_OWNER = "morales.saldarriaga@gmail.com"
+	EMAIL_OWNER = "videmor@gmail.com"
 	after_create :send_mail
 
 	validates :fullname, presence: true
