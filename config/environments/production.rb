@@ -81,12 +81,21 @@ Rails.application.configure do
 
   # Config Mailer
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
+  # config.action_mailer.smtp_settings = {
+  #   :authentication => :plain,
+  #   :address => ENV['SPARKPOST_SMTP_HOST'],
+  #   :port => ENV['SPARKPOST_SMTP_PORT'],
+  #   :domain => "minerakmgold.com",
+  #   :user_name => ENV['SPARKPOST_SMTP_USERNAME'],
+  #   :password => ENV['SPARKPOST_SMTP_PASSWORD']
+  # }
+  ActionMailer::Base.smtp_settings = {
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
     :authentication => :plain,
-    :address => ENV['SPARKPOST_SMTP_HOST'],
-    :port => ENV['SPARKPOST_SMTP_PORT'],
-    :domain => "minerakmgold.com",
-    :user_name => ENV['SPARKPOST_SMTP_USERNAME'],
-    :password => ENV['SPARKPOST_SMTP_PASSWORD']
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD'],
+    :domain         => 'minerakmgold.com',
+    :enable_starttls_auto => true
   }
 end
