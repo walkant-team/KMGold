@@ -1,5 +1,14 @@
-$(".message-alert").append('<p id="flash" class="alert alert-success fade in">Se envio el mensaje, Gracias.</p>');
-$(".form-control").val("");
-setTimeout(function(){
-  $('#flash').fadeOut("slow");
-}, 3000);
+<% if @suscription.errors.empty? %>
+  $(".message-alert").append('<p id="flash" class="alert alert-success fade in">Se envio el mensaje, Gracias.</p>');
+  $(".form-control").val("");
+  setTimeout(function(){
+    $('#flash').fadeOut("slow");
+  }, 3000);
+<% else %>
+  // var message="<span id='flash'><%= '* Campos obligatorios' %><span>";
+  // var str_esc=escape(message);
+  $('.alert_error').before("<span class='flash'>* Campos obligatorios<span>");
+  setTimeout(function(){
+    $('.flash').fadeOut("slow");
+  }, 3000);
+<% end %>
