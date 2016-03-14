@@ -53,4 +53,5 @@ gem "letter_opener", :group => :development
 group :production do
   gem 'rails_12factor'
   gem 'pg'
+  gem 'puma'
 end

@@ -1,5 +1,5 @@
 class Suscription < ActiveRecord::Base
-	EMAIL_OWNER = "morales.saldarriaga@gmail.com"
+	EMAIL_OWNER = "videmor@gmail.com"
 	after_create :send_mail
 
 	validates :fullname, presence: true
@@ -8,6 +8,6 @@ class Suscription < ActiveRecord::Base
 	validates :comment, presence: true
 
 	def send_mail
-		SuscriptionMailer.notification_email(self).deliver_now
+		SuscriptionMailer.notification_email(self).deliver
 	end
 end

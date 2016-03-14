@@ -1,7 +1,7 @@
 class SuscriptionsController < ApplicationController
 	def create
 		@suscription = Suscription.new(suscription_params)
-	    @suscription.save
+	  @suscription.save
 	end
 
 	private
