@@ -50,6 +50,10 @@ h1,h2,h3,h4,h5,h6{
 	background-position: center center;
 }
 
+.navbar-collapse{
+	margin-top: 25px;	
+}
+
 #contact{
 	background-color: #f9f9f9;
 }
@@ -216,10 +220,10 @@ h1,h2,h3,h4,h5,h6{
 @media (max-width: 400px) {
 	.header-h1{
 		margin-top: 40px;
-		font-size: 40px;
+		font-size: 35px;
 	}
 	.header-h2{
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	.img-res{
@@ -240,10 +244,10 @@ h1,h2,h3,h4,h5,h6{
 @media (max-width: 360px) {
 	.header-h1{
 		margin-top: 40px;
-		font-size: 40px;
+		font-size: 35px;
 	}
 	.header-h2{
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	.img-res{
@@ -263,10 +267,10 @@ h1,h2,h3,h4,h5,h6{
 @media (max-width: 320px) {
 	.header-h1{
 		margin-top: 40px;
-		font-size: 40px;
+		font-size: 35px;
 	}
 	.header-h2{
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	.img-res{
